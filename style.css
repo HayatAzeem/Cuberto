@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Averta CY";
+    scrollbar-width: thin;
 }
 *::selection{
     color: white;
@@ -171,7 +172,7 @@ html,body{
     display: flex;
     justify-content: space-between;
     padding: 3vw 8vw;
-    gap: 3vw;
+    gap: 20px;
 }
 .slides img{
     width: 100%;
@@ -211,8 +212,7 @@ html,body{
 #fbottom{
     display: flex;
     padding: 8vw 15vw;
-    justify-content: space-between;
-    
+    justify-content: space-around;
 }
 #fbotomlft p{
     opacity: 0.8;
@@ -236,4 +236,32 @@ html,body{
 }
 #fbottom h1:hover{
     border-width: 100%;
+}
+@media (max-width: 768px) {
+    #nav, #homemain, #features {
+        padding: 5vw;
+    }
+    #headings h1 {
+        font-size: 10vw;
+    }
+    #homelast p, .fleftelem h1, .fleftelem h3, .fleftelem h4 {
+        font-size: 3vw;
+    }
+}
+@media (max-width: 768px) {
+    #nav img{
+        width: 50px;
+    }#nav i {
+        font-size: 12px;
+    }#slide {
+        flex-direction: column;
+    }#fbottom {
+        padding: 5vw;
+    }#fbotomryt {
+        gap: 20px;
+    }#rytup h1{
+        font-size: 12px;
+    }#rytdown h1{
+        font-size: 12px;
+    }
 }
